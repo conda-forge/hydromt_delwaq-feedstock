@@ -16,21 +16,23 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.10
     - flit
     - pip
   run:
-    - python >=3.8
-    - hydromt >=0.5.0
-    - hydromt_wflow >=0.2.0
+    - python >=3.10
+    - hydromt >=0.9.1,<0.11
+    - hydromt_wflow >=0.4.0
     - geopandas >=0.10
-    - numpy
+    - numpy < 2
     - pandas
     - pyproj
     - rasterio
     - scipy
     - shapely >=2.0.0
+    - tqdm
     - xarray
+    - xugrid
 
 test:
   imports:
