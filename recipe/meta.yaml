@@ -1,5 +1,5 @@
 {% set name = "hydromt_delwaq" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/hydromt_delwaq-{{ version }}.tar.gz
-  sha256: 89d9045c28640368e75e7344a5634c69d41ae7bb10ff607f5b9b7ce9c6bdb062
+  sha256: 4f1909a7a1838a77d0f3bf70f896694a3bb5b012ba4e2a29229e941fe0b38d7d
 
 build:
   noarch: python
@@ -16,21 +16,23 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.10
     - flit
     - pip
   run:
-    - python >=3.8
-    - hydromt >=0.5.0
-    - hydromt_wflow >=0.2.0
+    - python >=3.10
+    - hydromt >=0.9.1,<0.11
+    - hydromt_wflow >=0.4.0
     - geopandas >=0.10
-    - numpy
+    - numpy <2
     - pandas
     - pyproj
     - rasterio
     - scipy
     - shapely >=2.0.0
+    - tqdm
     - xarray
+    - xugrid
 
 test:
   imports:
