@@ -24,7 +24,7 @@ requirements:
     - hydromt >=0.9.1,<0.11
     - hydromt_wflow >=0.4.0
     - geopandas >=0.10
-    - numpy < 2
+    - numpy <2
     - pandas
     - pyproj
     - rasterio
