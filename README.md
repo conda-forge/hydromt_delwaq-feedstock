@@ -145,6 +145,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@deltares-service-account](https://github.com/deltares-service-account/)
 * [@hboisgon](https://github.com/hboisgon/)
 * [@sibrenloos](https://github.com/sibrenloos/)
 
