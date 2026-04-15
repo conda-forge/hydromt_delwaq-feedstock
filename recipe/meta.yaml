@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "hydromt_delwaq" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hydromt_delwaq-{{ version }}.tar.gz
-  sha256: ae6eee39dfa5a752338348e5e6b8638f2de1665fc338f2dabae64c95eaa4233b
+  sha256: a024812cd39a15a67fe3a7342e2dc5b90b77dba08298033044fb70314dcef797
 
 build:
   noarch: python
